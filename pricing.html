@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ценообразуване — Velshift | Цени на Уеб Услуги София</title>
+  <meta name="description" content="Прозрачни цени за уеб дизайн, лендинг страници, онлайн магазини и дигитална реклама от Velshift. Без скрити такси, без изненади.">
+  <link rel="canonical" href="https://velshift.com/pricing.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="star-bg"></div>
+<div id="scene-progress"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo gradient-text">VELSHIFT</a>
+  <div class="nav-links">
+    <a href="index.html">Начало</a>
+    <a href="index.html#services">Услуги</a>
+    <a href="portfolio.html">Портфолио</a>
+    <a href="about.html">За нас</a>
+    <a href="pricing.html" class="nav-active">Цени</a>
+    <a href="contact.html" class="btn-quote">Запитване</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" onclick="closeMenu()">Начало</a>
+  <a href="index.html#services" onclick="closeMenu()">Услуги</a>
+  <a href="portfolio.html" onclick="closeMenu()">Портфолио</a>
+  <a href="about.html" onclick="closeMenu()">За нас</a>
+  <a href="pricing.html" onclick="closeMenu()">Цени</a>
+  <a href="contact.html" class="btn-quote" onclick="closeMenu()">Запитване</a>
+</div>
+
+<!-- HERO -->
+<section class="subpage-hero">
+  <h1 class="reveal">Прозрачни<br><span class="gradient-text">Цени</span></h1>
+  <p class="hero-sub reveal stagger-1">Без скрити такси, без изненади в края. Избери услугата и пакета, който пасва на бизнеса ти.</p>
+</section>
+
+<!-- PRICING TABS -->
+<section style="padding:60px 40px 100px">
+  <div class="pricing-tabs reveal">
+    <button class="pricing-tab active" data-target="panel-webdesign">Уеб Дизайн</button>
+    <button class="pricing-tab" data-target="panel-landing">Лендинг Страници</button>
+    <button class="pricing-tab" data-target="panel-ecommerce">Онлайн Магазини</button>
+    <button class="pricing-tab" data-target="panel-ads">Дигитална Реклама</button>
+  </div>
+
+  <!-- WEB DESIGN -->
+  <div class="pricing-panel active" id="panel-webdesign">
+    <div class="pricing-grid">
+      <div class="glass-card pricing-card reveal">
+        <h3>Starter</h3>
+        <div class="pricing-price gradient-text">400€</div>
+        <p class="pricing-desc">За малки бизнеси, които стартират онлайн.</p>
+        <ul class="pricing-features">
+          <li>До 5 страници</li>
+          <li>Мобилно адаптивен дизайн</li>
+          <li>Контактна форма</li>
+          <li>Базово SEO</li>
+          <li>2 ревизии на дизайна</li>
+          <li>Срок: 7-10 дни</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Starter</button>
+      </div>
+      <div class="glass-card pricing-card featured reveal stagger-1">
+        <span class="pricing-badge">Най-популярен</span>
+        <h3>Pro</h3>
+        <div class="pricing-price gradient-text">700€</div>
+        <p class="pricing-desc">Пълноценен сайт с анимации и CMS.</p>
+        <ul class="pricing-features">
+          <li>До 10 страници</li>
+          <li>Анимации и микро-интеракции</li>
+          <li>SEO оптимизация + Google Analytics</li>
+          <li>CMS за управление на съдържание</li>
+          <li>4 ревизии на дизайна</li>
+          <li>Срок: 10-14 дни</li>
+        </ul>
+        <button class="btn-primary" onclick="openModal()">Избери Pro</button>
+      </div>
+      <div class="glass-card pricing-card reveal stagger-2">
+        <h3>Premium</h3>
+        <div class="pricing-price gradient-text">1200€+</div>
+        <p class="pricing-desc">Максимална стойност за бизнеси с амбиции.</p>
+        <ul class="pricing-features">
+          <li>Неограничен брой страници</li>
+          <li>Custom анимации и 3D елементи</li>
+          <li>E-commerce интеграция</li>
+          <li>Многоезична поддръжка</li>
+          <li>Приоритетна поддръжка</li>
+          <li>Срок: по договаряне</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Premium</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANDING PAGES -->
+  <div class="pricing-panel" id="panel-landing">
+    <div class="pricing-grid">
+      <div class="glass-card pricing-card reveal">
+        <h3>Basic</h3>
+        <div class="pricing-price gradient-text">250€</div>
+        <p class="pricing-desc">Бърз лендинг за тестване на оферта.</p>
+        <ul class="pricing-features">
+          <li>1 страница, мобилно адаптивна</li>
+          <li>Контактна форма</li>
+          <li>Базов копирайтинг</li>
+          <li>2 ревизии</li>
+          <li>Срок: 3-5 дни</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Basic</button>
+      </div>
+      <div class="glass-card pricing-card featured reveal stagger-1">
+        <span class="pricing-badge">Най-популярен</span>
+        <h3>Pro</h3>
+        <div class="pricing-price gradient-text">450€</div>
+        <p class="pricing-desc">Лендинг, оптимизиран за реклами.</p>
+        <ul class="pricing-features">
+          <li>A/B тестван копирайтинг</li>
+          <li>Google Analytics + Facebook Pixel</li>
+          <li>UTM тракинг интеграция</li>
+          <li>Оптимизиран за скорост</li>
+          <li>3 ревизии</li>
+          <li>Срок: 5-7 дни</li>
+        </ul>
+        <button class="btn-primary" onclick="openModal()">Избери Pro</button>
+      </div>
+      <div class="glass-card pricing-card reveal stagger-2">
+        <h3>Premium</h3>
+        <div class="pricing-price gradient-text">800€</div>
+        <p class="pricing-desc">Пълна фуния за максимален ROI.</p>
+        <ul class="pricing-features">
+          <li>Landing + Thank You страница</li>
+          <li>Email sequence setup (3-5 имейла)</li>
+          <li>Пълна pixel + conversion тракинг</li>
+          <li>Heatmap анализ</li>
+          <li>Приоритетна поддръжка</li>
+          <li>Срок: 7-10 дни</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Premium</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ECOMMERCE -->
+  <div class="pricing-panel" id="panel-ecommerce">
+    <div class="pricing-grid">
+      <div class="glass-card pricing-card reveal">
+        <h3>Starter</h3>
+        <div class="pricing-price gradient-text">600€</div>
+        <p class="pricing-desc">За стартиращи онлайн магазини.</p>
+        <ul class="pricing-features">
+          <li>До 50 продукта</li>
+          <li>Платежен gateway (Stripe/PayPal)</li>
+          <li>Мобилно адаптивен дизайн</li>
+          <li>Базово SEO за продукти</li>
+          <li>Имейл нотификации за поръчки</li>
+          <li>Срок: 14-18 дни</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Starter</button>
+      </div>
+      <div class="glass-card pricing-card featured reveal stagger-1">
+        <span class="pricing-badge">Най-популярен</span>
+        <h3>Pro</h3>
+        <div class="pricing-price gradient-text">1000€</div>
+        <p class="pricing-desc">Пълноценен магазин с всички функции.</p>
+        <ul class="pricing-features">
+          <li>До 200 продукта</li>
+          <li>Управление на инвентар</li>
+          <li>Система за отстъпки и промоции</li>
+          <li>Клиентски акаунти</li>
+          <li>Интеграция с куриери</li>
+          <li>Срок: 18-25 дни</li>
+        </ul>
+        <button class="btn-primary" onclick="openModal()">Избери Pro</button>
+      </div>
+      <div class="glass-card pricing-card reveal stagger-2">
+        <h3>Premium</h3>
+        <div class="pricing-price gradient-text">1800€+</div>
+        <p class="pricing-desc">Enterprise решение без ограничения.</p>
+        <ul class="pricing-features">
+          <li>Неограничен брой продукти</li>
+          <li>Custom checkout процес</li>
+          <li>Многоезична поддръжка</li>
+          <li>Разширена аналитика</li>
+          <li>Приоритетна поддръжка</li>
+          <li>Срок: по договаряне</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Premium</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIGITAL ADS -->
+  <div class="pricing-panel" id="panel-ads">
+    <div class="pricing-grid">
+      <div class="glass-card pricing-card reveal">
+        <h3>Basic</h3>
+        <div class="pricing-price gradient-text">150€<small>/мес</small></div>
+        <p class="pricing-desc">За стартиращи рекламни кампании.</p>
+        <ul class="pricing-features">
+          <li>1 платформа (Facebook или Google)</li>
+          <li>Рекламен копирайтинг</li>
+          <li>2-3 рекламни варианта</li>
+          <li>Месечен отчет</li>
+          <li>Базово таргетиране</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Basic</button>
+      </div>
+      <div class="glass-card pricing-card featured reveal stagger-1">
+        <span class="pricing-badge">Най-популярен</span>
+        <h3>Pro</h3>
+        <div class="pricing-price gradient-text">280€<small>/мес</small></div>
+        <p class="pricing-desc">Сериозни кампании с A/B тестване.</p>
+        <ul class="pricing-features">
+          <li>2 платформи (Facebook + Google)</li>
+          <li>A/B тестване на криейтиви</li>
+          <li>Двуседмична оптимизация</li>
+          <li>Retargeting кампании</li>
+          <li>Детайлен двуседмичен отчет</li>
+        </ul>
+        <button class="btn-primary" onclick="openModal()">Избери Pro</button>
+      </div>
+      <div class="glass-card pricing-card reveal stagger-2">
+        <h3>Premium</h3>
+        <div class="pricing-price gradient-text">500€<small>/мес</small></div>
+        <p class="pricing-desc">Максимален ROI с dedicated manager.</p>
+        <ul class="pricing-features">
+          <li>Всички платформи</li>
+          <li>Dedicated account manager</li>
+          <li>Седмични отчети + call</li>
+          <li>Лендинг страница включена</li>
+          <li>Видео криейтиви</li>
+        </ul>
+        <button class="btn-outline" onclick="openModal()">Избери Premium</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="grad-line" style="max-width:700px;margin:0 auto"></div>
+
+<!-- COMPARISON TABLE -->
+<section style="padding:100px 40px">
+  <div class="section-header">
+    <h2 class="reveal">Какво е <span class="gradient-text">Включено</span></h2>
+    <p class="reveal stagger-1">Сравнение на всички пакети.</p>
+  </div>
+  <style>
+    .compare-mobile{display:none}
+    @media(max-width:768px){
+      .comparison-table{display:none}
+      .compare-mobile{display:flex;flex-direction:column;gap:24px;max-width:500px;margin:0 auto}
+      .compare-card{background:rgba(255,255,255,0.015);border:1px solid rgba(255,90,87,0.08);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:16px}
+      .compare-card-header{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;background:linear-gradient(135deg,var(--c1),var(--c2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+      .compare-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+      .compare-row:last-child{border-bottom:none}
+      .compare-label{color:var(--text-muted);font-size:13px}
+      .compare-val{font-size:13px;font-weight:600;color:#fff}
+      .compare-val.is-check{color:var(--c1)}
+      .compare-val.is-dash{color:rgba(255,255,255,0.2)}
+    }
+  </style>
+
+  <div class="comparison-table reveal stagger-2">
+    <table>
+      <thead>
+        <tr><th>Функция</th><th>Starter</th><th>Pro</th><th>Premium</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Мобилно адаптивен дизайн</td><td class="check">&#10003;</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+        <tr><td>SEO оптимизация</td><td>Базово</td><td class="check">Пълно</td><td class="check">Пълно</td></tr>
+        <tr><td>Контактна форма</td><td class="check">&#10003;</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+        <tr><td>CMS интеграция</td><td class="dash">—</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+        <tr><td>Анимации</td><td class="dash">—</td><td class="check">&#10003;</td><td class="check">Custom</td></tr>
+        <tr><td>Google Analytics</td><td class="dash">—</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+        <tr><td>Многоезичност</td><td class="dash">—</td><td class="dash">—</td><td class="check">&#10003;</td></tr>
+        <tr><td>Приоритетна поддръжка</td><td class="dash">—</td><td class="dash">—</td><td class="check">&#10003;</td></tr>
+        <tr><td>30-дневна гаранция</td><td class="check">&#10003;</td><td class="check">&#10003;</td><td class="check">&#10003;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="compare-mobile reveal stagger-2">
+    <div class="compare-card">
+      <div class="compare-card-header">Starter</div>
+      <div class="compare-row"><span class="compare-label">Мобилно адаптивен дизайн</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">SEO оптимизация</span><span class="compare-val">Базово</span></div>
+      <div class="compare-row"><span class="compare-label">Контактна форма</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">CMS интеграция</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">Анимации</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">Google Analytics</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">Многоезичност</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">Приоритетна поддръжка</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">30-дневна гаранция</span><span class="compare-val is-check">&#10003;</span></div>
+    </div>
+    <div class="compare-card">
+      <div class="compare-card-header">Pro</div>
+      <div class="compare-row"><span class="compare-label">Мобилно адаптивен дизайн</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">SEO оптимизация</span><span class="compare-val is-check">Пълно</span></div>
+      <div class="compare-row"><span class="compare-label">Контактна форма</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">CMS интеграция</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">Анимации</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">Google Analytics</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">Многоезичност</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">Приоритетна поддръжка</span><span class="compare-val is-dash">—</span></div>
+      <div class="compare-row"><span class="compare-label">30-дневна гаранция</span><span class="compare-val is-check">&#10003;</span></div>
+    </div>
+    <div class="compare-card">
+      <div class="compare-card-header">Premium</div>
+      <div class="compare-row"><span class="compare-label">Мобилно адаптивен дизайн</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">SEO оптимизация</span><span class="compare-val is-check">Пълно</span></div>
+      <div class="compare-row"><span class="compare-label">Контактна форма</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">CMS интеграция</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">Анимации</span><span class="compare-val is-check">Custom</span></div>
+      <div class="compare-row"><span class="compare-label">Google Analytics</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">Многоезичност</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">Приоритетна поддръжка</span><span class="compare-val is-check">&#10003;</span></div>
+      <div class="compare-row"><span class="compare-label">30-дневна гаранция</span><span class="compare-val is-check">&#10003;</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="grad-line" style="max-width:700px;margin:0 auto"></div>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-header">
+    <h2 class="reveal">Често Задавани <span class="gradient-text">Въпроси</span></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q">Има ли скрити такси?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a"><p>Не. Цената, която виждаш, е цената, която плащаш. Единствените допълнителни разходи са за домейн (~10-15€/год) и хостинг (често безплатен с Vercel/Netlify).</p></div>
+    </div>
+    <div class="faq-item reveal stagger-1">
+      <button class="faq-q">Мога ли да надградя пакета по-късно?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a"><p>Да! Започни със Starter и надгради до Pro, когато бизнесът расте. Доплащаш само разликата в цените, не започваш от нулата.</p></div>
+    </div>
+    <div class="faq-item reveal stagger-2">
+      <button class="faq-q">Как се плаща — наведнъж или на вноски?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a"><p>Стандартно: 50% аванс при старт, 50% при предаване. За по-големи проекти (Premium) обсъждаме индивидуален план за плащане.</p></div>
+    </div>
+    <div class="faq-item reveal stagger-3">
+      <button class="faq-q">Какво включва 30-дневната гаранция?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a"><p>Всички бъгове, малки промени в текстове и корекции по дизайна — безплатно. Не включва добавяне на нови функции или цели нови секции.</p></div>
+    </div>
+    <div class="faq-item reveal stagger-4">
+      <button class="faq-q">Предлагате ли месечна поддръжка?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a"><p>Да — от 50€/мес за малки промени, ъпдейти, бекъпи и мониторинг. Не е задължително — сайтът е твоя собственост и работи и без нас.</p></div>
+    </div>
+    <div class="faq-item reveal stagger-5">
+      <button class="faq-q">Приемате ли плащане в лева?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+      <div class="faq-a"><p>Да, приемаме и в BGN по фиксирания курс (1€ = 1.956 лв). Плащане с банков превод, Revolut или PayPal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="grad-line" style="max-width:700px;margin:0 auto 60px"></div>
+  <div class="cta-content">
+    <h2 class="reveal">Не знаеш кой пакет<br><span class="gradient-text">е за теб?</span></h2>
+    <p class="reveal stagger-1">Пиши ни — консултацията е безплатна и без задължения.</p>
+    <div class="reveal stagger-2"><a href="contact.html" class="btn-cta">Безплатна Консултация</a></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="grad-line" style="margin-bottom:56px"></div>
+  <div class="footer-top">
+    <div class="footer-grid">
+      <div><a href="index.html" class="footer-logo gradient-text">VELSHIFT</a><p class="footer-tagline">Ние не правим сайтове.<br>Ние изграждаме растеж.</p></div>
+      <div class="footer-col"><h4>Услуги</h4><ul><li><a href="services/web-design.html">Уеб Дизайн & UI/UX</a></li><li><a href="services/landing-pages.html">Лендинг Страници</a></li><li><a href="services/ecommerce.html">Онлайн Магазини</a></li><li><a href="services/digital-ads.html">Дигитална Реклама</a></li></ul></div>
+      <div class="footer-col"><h4>Навигация</h4><ul><li><a href="index.html">Начало</a></li><li><a href="portfolio.html">Портфолио</a></li><li><a href="about.html">За нас</a></li><li><a href="contact.html">Контакт</a></li></ul></div>
+      <div class="footer-col"><h4>Контакт</h4><p class="contact-item">hello@velshift.com</p><p class="contact-item">+359 88 888 8888</p><p class="contact-item">София, България</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="grad-line"></div>
+    <div class="footer-bottom" style="padding-top:20px"><p>&copy; 2026 Velshift. Всички права запазени.</p></div>
+  </div>
+</footer>
+
+<!-- CONTACT MODAL -->
+<div id="contact-modal" class="modal-overlay" onclick="handleModalOverlayClick(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <h2 class="modal-title">Запитване</h2>
+    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+      <div id="form-fields">
+        <div class="field-group"><label>Име *</label><input type="text" name="name" required placeholder="Вашето име"></div>
+        <div class="field-group"><label>Имейл *</label><input type="email" name="email" required placeholder="you@example.com"></div>
+        <div class="field-group"><label>Телефон</label><input type="tel" name="phone" placeholder="+359 88 ..."></div>
+        <div class="field-group"><label>Услуга *</label><select name="service" required><option value="">-- Избери --</option><option>Уеб Дизайн & UI/UX</option><option>Лендинг Страница</option><option>Онлайн Магазин</option><option>Дигитална Реклама</option></select></div>
+        <div class="field-group"><label>Бюджет</label><select name="budget"><option value="">-- Избери --</option><option>До 300€</option><option>300€ – 600€</option><option>600€ – 1000€</option><option>1000€+</option></select></div>
+        <div class="field-group"><label>Описание</label><textarea name="description" style="min-height:90px" placeholder="Разкажи ни за проекта си"></textarea></div>
+        <div id="form-error" class="form-error" style="display:none"></div>
+        <button type="submit" class="btn-submit" id="btn-submit">Изпрати Запитване</button>
+      </div>
+      <div id="form-success" class="form-success" style="display:none">
+        <div class="success-icon">✓</div>
+        <p>Получихме запитването ти! Ще се свържем до 24 часа.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<a id="viber-float" href="viber://chat?number=%2B35988888888" aria-label="Viber">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M11.4.2C5.5.4.6 5.3.4 11.3c-.1 2.9.8 5.6 2.5 7.8L1.1 23.2l4.3-1.7c2 1.2 4.3 1.9 6.7 1.9h.1c6 0 10.9-4.9 11.1-10.9.2-6.2-4.4-11.2-10.1-12.3H11.4z"/></svg>
+</a>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
